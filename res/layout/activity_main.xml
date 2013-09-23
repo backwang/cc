@@ -15,7 +15,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="103dp"
-        android:ems="10">
+        android:ems="10"
+        android:hint="@string/hit_loginusername">
         <requestFocus />
         </EditText>
 
@@ -27,6 +28,7 @@
         android:layout_below="@+id/editText1"
         android:layout_marginTop="30dp"
         android:ems="10"
+        android:hint="@string/hit_loginpassword"
         android:inputType="textPassword" >
 
         
