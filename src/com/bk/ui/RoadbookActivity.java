@@ -17,7 +17,7 @@ public class RoadbookActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
+
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_roadbook);
 
@@ -25,27 +25,36 @@ public class RoadbookActivity extends Activity {
 	}
 
 	private void GetMyRoadbookList() {
-		// TODO Auto-generated method stub
+
 		AsyncHttpClient asynchttpclient = new AsyncHttpClient();
-		asynchttpclient.get("http://10.0.2.2/ci/index.php/api/example/user/id/1/format/json",
-				new JsonHttpResponseHandler() {
-					@Override
-					public void onSuccess(int arg0, JSONObject arg1) {
-						// TODO Auto-generated method stub
-						super.onSuccess(arg0, arg1);
+		asynchttpclient
+				.get("http://10.0.2.2/ci/index.php/api/example/user/id/1/format/json",
+						new JsonHttpResponseHandler() {
+							@Override
+							public void onStart() {
 
-						try {
-							JSONTokener jsonParser = new JSONTokener(arg1
-									.toString());
-							JSONObject person = (JSONObject) jsonParser.nextValue();
-							System.out.println(person.getString("fact"));
-						} catch (Exception e) {
-							// TODO: handle exception
-						}
+								super.onStart();
+								// TODO 这是发出网络请求时的动作处理
+							}
 
-					}
+							@Override
+							public void onSuccess(int arg0, JSONObject arg1) {
 
-				});
+								super.onSuccess(arg0, arg1);
+
+								try {
+									JSONTokener jsonParser = new JSONTokener(
+											arg1.toString());
+									JSONObject person = (JSONObject) jsonParser
+											.nextValue();
+									System.out.println(person.getString("fact"));
+								} catch (Exception e) {
+
+								}
+
+							}
+
+						});
 	}
 
 	/***
@@ -58,25 +67,25 @@ public class RoadbookActivity extends Activity {
 
 		@Override
 		public int getCount() {
-			// TODO Auto-generated method stub
+
 			return 0;
 		}
 
 		@Override
 		public Object getItem(int position) {
-			// TODO Auto-generated method stub
+
 			return null;
 		}
 
 		@Override
 		public long getItemId(int position) {
-			// TODO Auto-generated method stub
+
 			return 0;
 		}
 
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
-			// TODO Auto-generated method stub
+
 			return null;
 		}
 

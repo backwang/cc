@@ -23,7 +23,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 	}
 
 	private void Init() {
-		// TODO Auto-generated method stub
+		
 		btn_login = (Button) findViewById(R.id.btn_login);
 		btn_login.setOnClickListener(this);
 	}
@@ -37,7 +37,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
+		
 		switch (v.getId()) {
 		case R.id.btn_login:
 			Intent intent = new Intent();
