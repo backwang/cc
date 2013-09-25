@@ -7,5 +7,6 @@
     <string name="btn_reg">注册</string>
     <string name="hit_loginusername">请输入用户名</string>
     <string name="hit_loginpassword">请输入密码</string>
+    <string name="btn_newroadbook">新建</string>
 
 </resources>

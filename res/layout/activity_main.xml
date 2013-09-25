@@ -22,7 +22,8 @@
             <LinearLayout
                 android:layout_width="108dp"
                 android:layout_height="108dp"
-                android:background="#FF7F24" >
+                android:background="#FF7F24"
+                android:onClick="Roadbook_OnClick" >
 
                 <FrameLayout
                     android:layout_width="wrap_content"
