@@ -37,18 +37,21 @@ public final class R {
         public static final int rootblock_icon_set_selected=0x7f02000d;
     }
     public static final class id {
-        public static final int action_settings=0x7f080006;
+        public static final int action_settings=0x7f080008;
         public static final int btn_login=0x7f080002;
         public static final int button2=0x7f080003;
         public static final int download_btn=0x7f080004;
         public static final int editText1=0x7f080000;
         public static final int editText2=0x7f080001;
         public static final int lv_roadbooklist=0x7f080005;
+        public static final int tv_roadbookdate=0x7f080007;
+        public static final int tv_roadbooksubject=0x7f080006;
     }
     public static final class layout {
         public static final int activity_login=0x7f030000;
         public static final int activity_main=0x7f030001;
         public static final int activity_roadbook=0x7f030002;
+        public static final int item_roadbooklist=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f070000;
